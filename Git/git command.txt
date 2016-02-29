@@ -1,0 +1,28 @@
+git log
+git diff                                                # comapare working directory and staging area
+git diff id id
+git diff --stage                                        # compare staging area and the most recent commit
+git reset --hard                                        # discard any changes in working directory and staging area
+git checkout SHA                                        # go back to certain commit
+git checkout master                                     # go back to master
+git checkout -b new_branch.name                         # create a new branch to retain commits you create
+git status
+git add file.name
+git commit -m "message"
+git branch                                              # check current branch
+git branch name                                         # create new branch
+git checkout branch.name                                # switch to branch.name
+git merge branch2 branch3                               # checkout the main branch first and merge branch 2 & 3 to branch 1
+git merge --abort                                       # restore your files to their state before you started the merge
+git show commit_id                                      # compare a commit to its parent
+git remote add origin https/ssh
+git remote -v                                           # check remote repo
+git push -u origin master                               # push local master branch to remote origin repository
+git pull origin master
+git remote add upstream ssh/https                       # keep forked repo update to the original repo
+git fetch upstream                                      # update the master branch
+git rebase upstream/master                              # rebase the "marge base"
+git fetch origin                                        # fetch the updated content from remote but keep local change
+git pull origin master                                  # = git fetch origin + git merge master origin/master
+git pull upstream master                                # = git fetch upstream + git merge upstream master
+git reset --hard origin/master
